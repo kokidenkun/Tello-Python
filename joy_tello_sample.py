@@ -1,5 +1,6 @@
 from tello import Tello
 import sys
+from datetime import datetime
 import time
 
 def main():
@@ -9,14 +10,15 @@ def main():
 
     try:
         while True:
+            time.sleep(1)
             print("\n")
             print("1: takeoff")
             print("2: land")
             print("3: battery?")
             print("4: height?")
-            print("5: up 10cm")
             print("commandを入力してENTER")
             command = input(">> ")
+            time.sleep(1)
 
             if command == "1":
                 command = "takeoff"
@@ -26,8 +28,6 @@ def main():
                 command = "battery?"
             elif command == "4":
                 command = "height?"
-            elif command == "5":
-                command = "up "
             else:
                 print("\nover")
                 break
