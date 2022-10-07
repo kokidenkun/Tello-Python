@@ -1,0 +1,166 @@
+Exception in thread Thread-1 (_receive_thread):
+Traceback (most recent call last):
+  File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+    self.run()
+  File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/lab2015/Tello-Python/tello.py", line 89, in _receive_thread
+    self.log[-1].add_response(self.response)
+IndexError: list index out of range
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] sps_id 0 out of range
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] sps_id 0 out of range
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
+[h264 @ 0x5607338142c0] decode_slice_header error
+[h264 @ 0x5607338142c0] no frame!
+[h264 @ 0x5607338142c0] concealing 207 DC, 207 AC, 207 MV errors in P frame
+[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
+[h264 @ 0x5607338142c0] error while decoding MB 0 39, bytestream 2458
+[h264 @ 0x5607338142c0] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 467 DC, 467 AC, 467 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 358 DC, 358 AC, 358 MV errors in P frame
+[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
+[h264 @ 0x5607338142c0] error while decoding MB 0 42, bytestream 1582
+[h264 @ 0x5607338142c0] concealing 229 DC, 229 AC, 229 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 266 DC, 266 AC, 266 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 741 DC, 741 AC, 741 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 328 DC, 328 AC, 328 MV errors in P frame
+[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
+[h264 @ 0x5607338142c0] error while decoding MB 0 36, bytestream 4250
+[h264 @ 0x5607338142c0] concealing 589 DC, 589 AC, 589 MV errors in P frame
+[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
+[h264 @ 0x5607338142c0] error while decoding MB 0 38, bytestream 3354
+[h264 @ 0x5607338142c0] concealing 469 DC, 469 AC, 469 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 215 DC, 215 AC, 215 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 597 DC, 597 AC, 597 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 661 DC, 661 AC, 661 MV errors in P frame
+[h264 @ 0x5607338142c0] concealing 435 DC, 435 AC, 435 MV errors in P frame
+[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
+[h264 @ 0x5607338142c0] error while decoding MB 0 39, bytestream 3013
+[h264 @ 0x5607338142c0] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[h264 @ 0x5607338142c0] error while decoding MB 31 33, bytestream -8
+[h264 @ 0x5607338142c0] concealing 738 DC, 738 AC, 738 MV errors in P frame
+Exception in thread Thread-3 (control_tello):
+Traceback (most recent call last):
+  File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+terminate called without an active exception

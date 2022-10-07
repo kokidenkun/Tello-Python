@@ -57,9 +57,13 @@ def main():
 def test_cv_loop():
     fno=0
 
-    time.sleep(3)
+    #time.sleep(3)
     while run:
         now_frame = tello.read()
+        if now_frame is None:
+            time.sleep(0.1)
+            continue
+
         #print(fno, now_frame)
         fno += 1
 
