@@ -6,6 +6,8 @@ from pygame.locals import *
 import pygame
 import cv2
 
+VIDEO = False
+
 run = True
 
 A_BUTTON = 0
@@ -45,8 +47,11 @@ def main():
     # video_thread = threading.Thread(target=videoloop(), args=())
     # video_thread.start()
 
-    # get_info_thread.daemon = True
-    # get_info_thread.start()
+    get_info_thread.daemon = True
+    get_info_thread.start()
+
+    while not VIDEO:
+        time.sleep(1)
 
     try:
         test_cv_loop()
@@ -99,7 +104,6 @@ def control_tello():
 
     try:
         while run:
-            screen.fill((0, 0, 0))
             for event in pygame.event.get():
                 if event.type == JOYBUTTONDOWN or event.type == KEYDOWN or event.type == JOYAXISMOTION:
                     operation = True
@@ -161,31 +165,25 @@ def control_tello():
                     
                     pygame.event.pump()
 
-            time.sleep(0.1)
+            time.sleep(0.001)
 
             if operation:
                 operation = False
             #else:
                 #tello.send_command("battery?")
                 #print("time: ", time.time()-t0, "\n")
-            
-            time.sleep(0.5)
+        
 
 
     except( KeyboardInterrupt, SystemExit ):
         print("SIGINTを検知")
 
-def videoloop():
-    screen.blit()
-    pygame.display.update()
-
-
 def get_info():
     while run:
-        # tello.send_command("battery?")
-        # tello.send_command("height?")
-        # print(time.time())
-        # time.sleep(3)
+        tello.send_command("battery?")
+        tello.send_command("height?")
+        print(time.time())
+        time.sleep(0.5)
         print("")
         
 

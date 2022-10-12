@@ -1,166 +1,210 @@
 Exception in thread Thread-1 (_receive_thread):
 Traceback (most recent call last):
   File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
     self.run()
   File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 953, in run
     self._target(*self._args, **self._kwargs)
   File "/home/lab2015/Tello-Python/tello.py", line 89, in _receive_thread
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
     self.log[-1].add_response(self.response)
 IndexError: list index out of range
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] sps_id 0 out of range
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] sps_id 0 out of range
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] non-existing PPS 0 referenced
-[h264 @ 0x5607338142c0] decode_slice_header error
-[h264 @ 0x5607338142c0] no frame!
-[h264 @ 0x5607338142c0] concealing 207 DC, 207 AC, 207 MV errors in P frame
-[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
-[h264 @ 0x5607338142c0] error while decoding MB 0 39, bytestream 2458
-[h264 @ 0x5607338142c0] concealing 409 DC, 409 AC, 409 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 467 DC, 467 AC, 467 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 358 DC, 358 AC, 358 MV errors in P frame
-[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
-[h264 @ 0x5607338142c0] error while decoding MB 0 42, bytestream 1582
-[h264 @ 0x5607338142c0] concealing 229 DC, 229 AC, 229 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 266 DC, 266 AC, 266 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 741 DC, 741 AC, 741 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 328 DC, 328 AC, 328 MV errors in P frame
-[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
-[h264 @ 0x5607338142c0] error while decoding MB 0 36, bytestream 4250
-[h264 @ 0x5607338142c0] concealing 589 DC, 589 AC, 589 MV errors in P frame
-[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
-[h264 @ 0x5607338142c0] error while decoding MB 0 38, bytestream 3354
-[h264 @ 0x5607338142c0] concealing 469 DC, 469 AC, 469 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 215 DC, 215 AC, 215 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 597 DC, 597 AC, 597 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 661 DC, 661 AC, 661 MV errors in P frame
-[h264 @ 0x5607338142c0] concealing 435 DC, 435 AC, 435 MV errors in P frame
-[h264 @ 0x5607338142c0] left block unavailable for requested intra mode
-[h264 @ 0x5607338142c0] error while decoding MB 0 39, bytestream 3013
-[h264 @ 0x5607338142c0] concealing 409 DC, 409 AC, 409 MV errors in P frame
-[h264 @ 0x5607338142c0] error while decoding MB 31 33, bytestream -8
-[h264 @ 0x5607338142c0] concealing 738 DC, 738 AC, 738 MV errors in P frame
-Exception in thread Thread-3 (control_tello):
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] non-existing PPS 0 referenced
+[h264 @ 0x5635e0a5c140] decode_slice_header error
+[h264 @ 0x5635e0a5c140] no frame!
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 26, bytestream 4570
+[h264 @ 0x5635e0a5c140] concealing 1189 DC, 1189 AC, 1189 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 375 DC, 375 AC, 375 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2163 DC, 2163 AC, 2163 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 3 11, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 2086 DC, 2086 AC, 2086 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 17 44, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 92 DC, 92 AC, 92 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 56 43, bytestream -16
+[h264 @ 0x5635e0a5c140] concealing 113 DC, 113 AC, 113 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 14 2, bytestream -24
+[h264 @ 0x5635e0a5c140] concealing 2615 DC, 2615 AC, 2615 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 565 DC, 565 AC, 565 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 43, bytestream 1390
+[h264 @ 0x5635e0a5c140] concealing 169 DC, 169 AC, 169 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 17 41, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 272 DC, 272 AC, 272 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 35 DC, 35 AC, 35 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 9 41, bytestream -16
+[h264 @ 0x5635e0a5c140] concealing 280 DC, 280 AC, 280 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 23 41, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 266 DC, 266 AC, 266 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 5 44, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 104 DC, 104 AC, 104 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 29 42, bytestream 141
+[h264 @ 0x5635e0a5c140] concealing 200 DC, 200 AC, 200 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2320 DC, 2320 AC, 2320 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2085 DC, 2085 AC, 2085 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 31 35, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 618 DC, 618 AC, 618 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 43, bytestream 1171
+[h264 @ 0x5635e0a5c140] concealing 169 DC, 169 AC, 169 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 44 38, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 425 DC, 425 AC, 425 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 42, bytestream 255
+[h264 @ 0x5635e0a5c140] concealing 229 DC, 229 AC, 229 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 55 43, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 114 DC, 114 AC, 114 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 39, bytestream 4009
+[h264 @ 0x5635e0a5c140] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 45 38, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 424 DC, 424 AC, 424 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 37, bytestream 4452
+[h264 @ 0x5635e0a5c140] concealing 529 DC, 529 AC, 529 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 39 41, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 250 DC, 250 AC, 250 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 41 41, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 248 DC, 248 AC, 248 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 36, bytestream 4450
+[h264 @ 0x5635e0a5c140] concealing 589 DC, 589 AC, 589 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 42, bytestream 1868
+[h264 @ 0x5635e0a5c140] concealing 229 DC, 229 AC, 229 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 39, bytestream 3386
+[h264 @ 0x5635e0a5c140] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 44, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 109 DC, 109 AC, 109 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2524 DC, 2524 AC, 2524 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 51 30, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 898 DC, 898 AC, 898 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 74 DC, 74 AC, 74 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 20 41, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 269 DC, 269 AC, 269 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 4 DC, 4 AC, 4 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 37 41, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 252 DC, 252 AC, 252 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 7 25, bytestream -5
+[h264 @ 0x5635e0a5c140] concealing 1242 DC, 1242 AC, 1242 MV errors in I frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 44, bytestream 2062
+[h264 @ 0x5635e0a5c140] concealing 109 DC, 109 AC, 109 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 45 35, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 604 DC, 604 AC, 604 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 56 43, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 113 DC, 113 AC, 113 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 550 DC, 550 AC, 550 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 34 43, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 135 DC, 135 AC, 135 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 6 44, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 103 DC, 103 AC, 103 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 39, bytestream 3311
+[h264 @ 0x5635e0a5c140] concealing 409 DC, 409 AC, 409 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 28 41, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 261 DC, 261 AC, 261 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 12 2, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 2617 DC, 2617 AC, 2617 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 1649 DC, 1649 AC, 1649 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 25 15, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 1824 DC, 1824 AC, 1824 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 57 43, bytestream -16
+[h264 @ 0x5635e0a5c140] concealing 112 DC, 112 AC, 112 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 444 DC, 444 AC, 444 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 36, bytestream 177
+[h264 @ 0x5635e0a5c140] concealing 589 DC, 589 AC, 589 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 20 42, bytestream 206
+[h264 @ 0x5635e0a5c140] concealing 209 DC, 209 AC, 209 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 56 43, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 113 DC, 113 AC, 113 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 535 DC, 535 AC, 535 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 3 22, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 1426 DC, 1426 AC, 1426 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 28 41, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 261 DC, 261 AC, 261 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 198 DC, 198 AC, 198 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 3 44, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 106 DC, 106 AC, 106 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 16 44, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 93 DC, 93 AC, 93 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 44 38, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 425 DC, 425 AC, 425 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 36 33, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 733 DC, 733 AC, 733 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 54 40, bytestream -12
+[h264 @ 0x5635e0a5c140] concealing 295 DC, 295 AC, 295 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 36 43, bytestream -14
+[h264 @ 0x5635e0a5c140] concealing 133 DC, 133 AC, 133 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 15 43, bytestream -10
+[h264 @ 0x5635e0a5c140] concealing 154 DC, 154 AC, 154 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 264 DC, 264 AC, 264 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 6 40, bytestream -14
+[h264 @ 0x5635e0a5c140] concealing 343 DC, 343 AC, 343 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2293 DC, 2293 AC, 2293 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 5 38, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 464 DC, 464 AC, 464 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 38, bytestream 2822
+[h264 @ 0x5635e0a5c140] concealing 469 DC, 469 AC, 469 MV errors in P frame
+[h264 @ 0x5635e0a5c140] concealing 2273 DC, 2273 AC, 2273 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 29 8, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 2240 DC, 2240 AC, 2240 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 1 44, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 108 DC, 108 AC, 108 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 7, bytestream 5062
+[h264 @ 0x5635e0a5c140] concealing 2329 DC, 2329 AC, 2329 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra4x4 mode -1
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 38, bytestream 15269
+[h264 @ 0x5635e0a5c140] concealing 469 DC, 469 AC, 469 MV errors in I frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 22 21, bytestream -8
+[h264 @ 0x5635e0a5c140] concealing 1467 DC, 1467 AC, 1467 MV errors in P frame
+[h264 @ 0x5635e0a5c140] left block unavailable for requested intra mode
+[h264 @ 0x5635e0a5c140] error while decoding MB 0 37, bytestream -2
+[h264 @ 0x5635e0a5c140] concealing 529 DC, 529 AC, 529 MV errors in P frame
+[h264 @ 0x5635e0a5c140] error while decoding MB 40 34, bytestream -6
+[h264 @ 0x5635e0a5c140] concealing 669 DC, 669 AC, 669 MV errors in P frame
 Traceback (most recent call last):
-  File "/home/lab2015/miniconda3/envs/tello/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
-terminate called without an active exception
+  File "/home/lab2015/Tello-Python/gamepad_info.py", line 191, in <module>
+    main()
+  File "/home/lab2015/Tello-Python/gamepad_info.py", line 54, in main
+    time.sleep(1)
+KeyboardInterrupt
