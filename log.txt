@@ -1,7 +1,0 @@
-pygame 2.1.2 (SDL 2.0.16, Python 3.10.6)
-Hello from the pygame community. https://www.pygame.org/contribute.html
-sent: command
-sent: streamon
-from ('192.168.10.1', 8889): b'ok'
-ジョイスティックの名前: Logitech Gamepad F310
-Ctrl c

@@ -9,7 +9,7 @@ import libh264decoder	# H.264のデコード用(自分でビルドしたlibh264d
 class Tello:
 	"""Telloドローンと通信するラッパークラス"""
 
-	def __init__(self, local_ip, local_port, imperial=False, command_timeout=.3, tello_ip='192.168.10.1', tello_port=8889):
+	def __init__(self, local_ip="0.0.0.0", local_port=8889, imperial=False, command_timeout=.3, tello_ip='192.168.10.1', tello_port=8889):
 		"""
 		クラスの初期化．ローカルのIP/ポートをバインドし，Telloをコマンドモードにする．
 
@@ -48,7 +48,6 @@ class Tello:
 		print ('sent: command')
 		self.socket.sendto(b'streamon', self.tello_address)			# 'streamon'を送信し，ビデオのストリーミングを開始
 		print ('sent: streamon')
-
 		self.socket_video.bind((local_ip, self.local_video_port))	# ビデオ受信のUDPサーバのスタート(バインド)
 
 		# ビデオ受信のスレッド
@@ -71,7 +70,8 @@ class Tello:
 			return self.frame
 
 	def video_freeze(self, is_freeze=True):
-		"""ビデオ出力の一時停止 -- is_freezeフラグをTrueにセットすること"""
+		"""ビデオ出力の
+		時停止 -- is_freezeフラグをTrueにセットすること"""
 		self.is_freeze = is_freeze	# 一時停止フラグの状態をセット
 		if is_freeze:				# Trueのときは，現在の画像をlast_frameに保存しておく
 			self.last_frame = self.frame
@@ -79,9 +79,7 @@ class Tello:
 	def _receive_thread(self):
 		"""
 		Telloからの応答を監視する
-
 		スレッドとして走らせる．Telloが最後に返した応答をself.responseに格納する
-
 		"""
 		while True:
 			try:
@@ -134,6 +132,9 @@ class Tello:
 		return res_frame_list	# 複数枚の画像が入ったリストとして返す
 
 	def send_command(self, command):
+
+
+
 		"""
 		Telloへコマンドを送信し，応答を待つ
 

@@ -1,3 +1,13 @@
+'''
+
+Telloの起動方法
+ 1) スイッチを1回押し、オレンジの点滅状態にする
+ 2) PCからWiFi接続
+
+ポートを使っているプロセスを調べるコマンド
+ sudo fuser -n udp 8889 -n udp 11111
+'''
+
 import socket
 import threading
 import time
@@ -6,89 +16,121 @@ from stats import Stats
 import numpy as np
 import libh264decoder
 
+
 class Tello:
-    def __init__(self, local_ip, local_port):
-        #self.local_ip = ''
-        #self.local_port = 8889
+    def __init__(self, local_ip= '0.0.0.0', local_port=8889, command_timeout=0.3, video=True):
+
+        self.command_timeout = command_timeout
+        self.abort_flag = False
+        self.response = None
+        self.log = []
+        self.MAX_TIME_OUT = 10.0
+        self.frame = None # numpy array BGR?
+        self.is_freeze = False
+        self.last_frame = None
+
+        # Telloにコマンドを送りつけるためのソケットアドレスの作成
+        self.tello_ip = '192.168.10.1'
+        self.tello_port = 8889
+        self.tello_address = (self.tello_ip, self.tello_port)
+
+        # コマンド送信、期待情報取得用のソケットの生成
+        self.local_ip = local_ip
+        self.local_port = local_port
         self.decoder = libh264decoder.H264Decoder()
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # socket for sending cmd
         self.socket.bind((local_ip, local_port))
 
-        # thread for receiving cmd ack
+
+        # Telloとの通信を開始する
+        self.socket.sendto(b'command', self.tello_address)
+        self.response, ip = self.socket.recvfrom(1024)
+        print('(3_3) First Contact:: ',self.response)  # OKと表示されるはず 
+
+        # 上で"OK"をもらってから、受信スレッドを回す 
         self.receive_thread = threading.Thread(target=self._receive_thread)
         self.receive_thread.daemon = True
         self.receive_thread.start()
 
-        self.tello_ip = '192.168.10.1'
-        self.tello_port = 8889
-        self.tello_address = (self.tello_ip, self.tello_port)
-        self.log = []
+        if video:
+            # ビデオ受信用のUDPポートを開いておく
+            self.local_video_port = 11111 # ビデオ受信用のポート
+            self.socket_video = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            self.socket_video.bind(("0.0.0.0", self.local_video_port))
 
-        self.MAX_TIME_OUT = 10.0
+            # ビデオ受信用のスレッド
+            self.receive_video_thread = threading.Thread(target=self._receive_video_thread)
+            self.receive_video_thread.daemon = True
+            self.receive_video_thread.start()
+        
+            # TelloにH264ビデオの配信を指示する
+            self.socket.sendto(b'streamon', self.tello_address)
+            print('sent: streamon')
 
-        # カメラ関連
-        self.socket.sendto(b'command', self.tello_address)
-        print('sent: command')
-        # Enable video stream. ビデオ画像取得を可能にする
-        self.socket.sendto(b'streamon', self.tello_address)
-        print('sent: streamon')
-
-        self.local_video_port = 11111# ビデオ受信用のポート
-        self.socket_video = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.socket_video.bind(("0.0.0.0", self.local_video_port))
-
-        self.frame = None# numpy array BGR?
-        self.is_freeze = False
-        self.last_frame = None
-
-        # ビデオ受信用のスレッド
-        self.receive_video_thread = threading.Thread(target=self._receive_video_thread)
-        self.receive_video_thread.daemon = True
-        self.receive_video_thread.start()
 
     def send_command(self, command):
         """
-        Send a command to the ip address. Will be blocked until
-        the last command receives an 'OK'.
-        If the command fails (either b/c time out or error),
-        will try to resend the command
-        :param command: (str) the command to send
-        :param ip: (str) the ip of Tello
-        :return: The latest command response
+        Telloへコマンドを送信し，応答を待つ
+        :param command: 送信するコマンド
+        :return (str): Telloの応答
         """
-        self.log.append(Stats(command, len(self.log)))
+        print (">> send cmd: {}".format(command))
+        self.abort_flag = False		# 中断フラグを倒す
+        timer = threading.Timer(self.command_timeout, self.set_abort_flag)		# タイムアウト時間が立ったらフラグを立てるタイマースレッドを作成
+        
+        self.socket.sendto(command.encode('utf-8'), self.tello_address)		# コマンドを送信
+        
+        timer.start()	# スレッドスタート
+        while self.response is None:		# タイムアウト前に応答が来たらwhile終了
+            if self.abort_flag is True:		# タイムアウト時刻になったらブレイク
+                break
+        timer.cancel()	# スレッド中断
+        
+        if self.response is None:		# 応答データが無い時
+            response = 'none_response'
+        else:							# 応答データがあるとき
+            response = self.response.decode('utf-8')
+        
 
-        self.socket.sendto(command.encode('utf-8'), self.tello_address)
-        print('sending command: %s to %s' % (command, self.tello_ip))
+        print('(@_@)---> ',response)
+        self.response = None	# _receive_threadスレッドが次の応答を入れてくれるので，ここでは空にしておく
+        
+        return response		# 今回の応答データを返す
 
-        start = time.time()
-        while not self.log[-1].got_response():
-            now = time.time()
-            diff = now - start
-            if diff > self.MAX_TIME_OUT:
-                print('Max timeout exceeded... command %s' % command)
-                # TODO: is timeout considered failure or next command still get executed
-                # now, next one got executed
-                return
-        print('Done!!! sent command: %s to %s' % (command, self.tello_ip))
+    def set_abort_flag(self):
+        """
+        self.abort_flagのフラグをTrueにする
+        send_command関数の中のタイマーで呼ばれる．
+        この関数が呼ばれるということは，応答が来なくてタイムアウトした，ということ．
+        """
+        
+        self.abort_flag = True
+
+    def get_battery(self):
+        """
+        バッテリー残量をパーセンテージで返す
+        Returns:
+        int: バッテリー残量のパーセンテージ
+        """
+        print("get_battery")
+        battery = self.send_command('battery?')
+        try:
+            battery = int(battery)
+        except:
+            pass
+        return battery
     
     def read(self):
         return self.frame
 
     def _receive_thread(self):
-        """Listen to responses from the Tello.
-
-        Runs as a thread, sets self.response to whatever the Tello last returned.
-
-        """
         while True:
             try:
-                self.response, ip = self.socket.recvfrom(1024)
-                print('from %s: %s' % (ip, self.response))
+                self.response, ip = self.socket.recvfrom(3000)		# Telloからの応答を受信（最大3000バイトまで一度に受け取れる）
+				#print(self.response)
+            except socket.error as exc:		# エラー時の処理
+                print ("Caught exception socket.error : %s" % exc)
 
-                self.log[-1].add_response(self.response)
-            except socket.error:
-                print("Caught exception socket.error : %s" % exc)
 
     def _receive_video_thread(self):
         packet_data = b''
