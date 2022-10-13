@@ -9,16 +9,14 @@ import time
 import random
 import numpy as np
 import libh264decoder
+import datetime
 
 class Tello:
     def __init__(self, video=True):
 
         self.frame = None
 
-        self.speed = None
-        self.battery = None
-        self.height = None
-        self.time = None
+        self.stat = None
 
         self.cmd_que = queue.Queue()
         self.cmd_now = None
@@ -27,6 +25,7 @@ class Tello:
 
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.socket.bind(('0.0.0.0', 8889))
+        self.socket.connect(self.tello_address)
         flag = fcntl.fcntl(self.socket, fcntl.F_GETFL)
         fcntl.fcntl(self.socket, fcntl.F_GETFL, flag | os.O_NONBLOCK)
 
@@ -42,12 +41,16 @@ class Tello:
         self.command_thread.daemon = True
         self.command_thread.start()
 
+        self.receive_stat_thread = threading.Thread(target=self._receive_stat_thread)
+        self.receive_stat_thread.daemon = True
+        self.receive_stat_thread.start()
+
 
     def put_command(self, cmd):
         self.cmd_que.put(cmd)
 
     def get_stat(self):
-        return {'battery': self.battery, 'height': self.height, 'speed': self.speed, 'time':self.time}
+        return self.stat
 
     def get_frame(self):
         return self.frame
@@ -56,34 +59,38 @@ class Tello:
     #-------------------------------------
 
     def _command_thread(self):
-        simple_command=['battery?', 'height?', 'speed?', 'time?']
+        #simple_command=['battery?', 'height?', 'speed?', 'time?']
         while True:
             time.sleep(0.2) ## このsleepが短すぎると、送信コマンドと、その結果がずれてくるので注意
             if not self.cmd_que.empty():
                 self.cmd_now = self.cmd_que.get()
                 ret = self.__control(self.cmd_now)
                 print(ret)
-                if self.cmd_now == 'battery?':
-                    self.battery = ret[0:-2]
-                if self.cmd_now == 'height?':
-                    self.height = ret[0:-2]
-                if self.cmd_now == 'speed?':
-                    self.speed = ret[0:-2]
-                if self.cmd_now == 'time?':
-                    self.time = ret[0:-2]
-            else:
-                self.cmd_que.put(random.choice(simple_command))
+            # else:
+            #     self.cmd_que.put(random.choice(simple_command))
 
     def __control(self, command):
         response = None
-        self.socket.sendto(command.encode('utf-8'), self.tello_address)
+        self.socket.send(command.encode('utf-8'))
         rfds, _ , _ = select.select( [self.socket], [], [], 0.3 )
         if self.socket in rfds:
-            response, ip = self.socket.recvfrom(3000)
+            response = self.socket.recv(3000)
             response = response.decode('utf-8')
         
         print(command, response)
         return response
+
+    def _receive_stat_thread(self):
+        self.socket_stat = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        self.socket_stat.bind(('0.0.0.0', 8890))
+        self.socket_stat.connect(self.tello_address)
+        
+        while True:
+            res_string = self.socket_stat.recv(2048)
+            res_string = res_string.decode('utf-8')
+            self.stat = dict([(x[0],x[1]) for x in [x.split(':') for x in res_string.strip().split(';')[0:-1]]])
+            # print(datetime.datetime.now(), ", ", self.stat)
 
     
     def _receive_video_thread(self):

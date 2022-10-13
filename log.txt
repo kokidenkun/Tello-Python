@@ -1,0 +1,184 @@
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] sps_id 0 out of range
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] sps_id 0 out of range
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] sps_id 0 out of range
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] sps_id 0 out of range
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] non-existing PPS 0 referenced
+[h264 @ 0x7f3764000bc0] decode_slice_header error
+[h264 @ 0x7f3764000bc0] no frame!
+[h264 @ 0x7f3764000bc0] concealing 200 DC, 200 AC, 200 MV errors in P frame
+[h264 @ 0x7f3764000bc0] concealing 188 DC, 188 AC, 188 MV errors in P frame
+Traceback (most recent call last):
+  File "/home/lab2015/Tello-Python/gamepadx.py", line 219, in <module>
+    main()
+  File "/home/lab2015/Tello-Python/gamepadx.py", line 54, in main
+    test_cv_loop()
+  File "/home/lab2015/Tello-Python/gamepadx.py", line 97, in test_cv_loop
+    cv2.putText(now_frame, text="command: "+cmd_sc, org=(700, 700), 
+NameError: name 'cmd_sc' is not defined
+Exception in thread Thread-3 (control_tello):
+terminate called without an active exception
